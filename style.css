@@ -10,6 +10,8 @@ body {
 }
 .header-image{
   background-image: url('main/header-image.png');
+  width: 250px;
+  height: 200px;
   justify-content: center;
   align-items: center;
   align-self: center;
