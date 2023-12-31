@@ -1,7 +1,7 @@
 :root {
 	--cell-size: 100px;
 
-	--color: #purple;
+	--color: #black;
 	--color-set: #0275d8;
 	--l: 10px;
 }
@@ -9,7 +9,7 @@ body {
 	margin: 0;
 }
 .header-image{
-  background-image: url('main/header-image.png');
+  background-image: url('https://i.postimg.cc/0NwHxdHy/image-header.png');
   width: 50px;
   height: 50px;
   justify-content: center;
@@ -58,26 +58,26 @@ body {
 }
 /* for cross */
 .board.x .cell:not(.circle):not(.x):hover {
-	background-image: url('main/tk.png');
+	background-image: url('https://i.postimg.cc/5y7dYZ3N/tk.png');
 	background-size: 80% 80%;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 /* for cross (set) */
 .cell:not(.circle).x {
-	background-image: url('main/cb.png');
+	background-image: url('https://i.postimg.cc/1RJZjqQh/cb.png');
 	background-size: 80% 80%;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 /* for circle */
 .board.circle .cell:not(.circle):not(.x):hover {	
-	background-image: url('main/cb.png');
+	background-image: url('https://i.postimg.cc/1RJZjqQh/cb.png');
 }
 
 /* for circle (set) */
 .cell:not(.x).circle {
-	background-image: url('main/cb.png');
+	background-image: url('https://i.postimg.cc/1RJZjqQh/cb.png');
 }
 .winning-message {
 	display: none;
