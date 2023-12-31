@@ -1,5 +1,5 @@
-const PLAYER_X_CLASS = document.getElementById('cb.png')
-const PLAYER_O_CLASS =document.getElementById('tk.png')
+const PLAYER_X_CLASS = 'x'
+const PLAYER_O_CLASS = 'circle'
 const WINNING_COMBINATIONS = [
 	[0, 1, 2],
 	[3, 4, 5],
@@ -45,10 +45,10 @@ function handleCellClick(e) {
 	}
 }
 function endGame() {
-  if draw {
+  if (draw) {
     winningMessageTextElement.innerText = "Draw!!"
   } else {
-    winningMessageTextElement.innerText = 'Play with $(isPlayer_O_Turn ? "O's' : "X's"} wins!'
+    winningMessageTextElement.innerText = 'Player with ${isPlayer_O_Turn ? "O's' : "X's"} wins!'
   }
   winningMessageElement.classList.add('show')
   }
