@@ -1,7 +1,5 @@
-const PLAYER_X_CLASS = document.getElementById("main/tk.png");
-const PLAYER_O_CLASS = document.getElementById("main/cb.png");
-PLAYER_X_CLASS.addEventListener("click", () => { 
-PLAYER_O_CLASS.classList.toggle("visible");
+const PLAYER_X_CLASS = document.getElementById[tk.png](https://postimg.cc/QKTnvYwR);
+const PLAYER_O_CLASS = document.getElementById[cb.png](https://postimg.cc/JtDgyt0P);
 const WINNING_COMBINATIONS = [
 	[0, 1, 2],
 	[3, 4, 5],
@@ -18,6 +16,7 @@ const winningMessageElement = document.getElementById('winningMessage')
 const restartButton = document.getElementById('restartButton')
 const winningMessageTextElement = document.getElementById('winningMessageText')
 let isPlayer_O_Turn = false
+
 startGame()
 
 restartButton.addEventListener('click', startGame)
