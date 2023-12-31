@@ -1,5 +1,7 @@
-const PLAYER_X_CLASS = 'x'
-const PLAYER_O_CLASS = 'circle'
+const PLAYER_X_CLASS = document.getElementById("main/tk.png");
+const PLAYER_O_CLASS = document.getElementById("main/cb.png");
+PLAYER_X_CLASS.addEventListener("click", () => { 
+PLAYER_O_CLASS.classList.toggle("visible");
 const WINNING_COMBINATIONS = [
 	[0, 1, 2],
 	[3, 4, 5],
