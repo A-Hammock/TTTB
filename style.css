@@ -9,7 +9,7 @@ body {
 	margin: 0;
 }
 .header-image{
-  background-image: url('bg.png');
+  background-image: url('main/header-image.png');
   justify-content: center;
   align-items: center;
   align-self: center;
