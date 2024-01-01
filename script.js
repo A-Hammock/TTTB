@@ -1,7 +1,7 @@
 <script>
 function imgPick() {
-const PLAYER_X_CLASS = "img src= https://postimg.cc/QKTnvYwR";
-const PLAYER_O_CLASS = "img src= https://postimg.cc/JtDgyt0P";
+const PLAYER_X_CLASS = "tk.png";
+const PLAYER_O_CLASS = "cb.png";
 const WINNING_COMBINATIONS = [
 	[0, 1, 2],
 	[3, 4, 5],
