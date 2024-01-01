@@ -1,11 +1,9 @@
-* {margin: 0; padding: 0; user-select: none; text-transform: uppercase;}
-body {
-background-image: url(''); 
-}
+{margin: 0; padding: 0; user-select: none; text-transform: uppercase;}
+body {background-image: url('https://postimg.cc/VJMZzgHQ'); }
 h2#game-message
 {
-	font-size: 30px; 
-	font-family: Tahoma;
+	font-size: 20px; 
+	font-family: Courier;
 	margin-bottom: 15px;
 	text-align: center;
 }
@@ -18,7 +16,7 @@ div#game-board
 div[id^="row-"] {clear: both;}
 div [id^="row-"] div
 {
-	//border: 30px solid plum;
+	border: 30px black;
 	height: 270px;
 	width: 270px;
 	float: left;
@@ -44,7 +42,7 @@ div[id^="row-"] div:last-child {border-right: none}
     font-size: 16px;
 	border-width: 5px;
     border-style: solid;
-    border-image: url('') 25% round;
+    border-image: url('https://i.postimg.cc/jjcQtfZJ/button.png') 25% round;
 
 }
 #restartButton
@@ -66,6 +64,11 @@ div[id^="row-"] div:last-child {border-right: none}
 	0% {left: 0;}
     100% { left: 1500px;}
 }
+#game-board
+{
+	position: relative;
+}
+
 #game-board
 {
 	position: relative;
