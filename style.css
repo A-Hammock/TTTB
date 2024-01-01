@@ -1,5 +1,6 @@
 {margin: 0; padding: 0; user-select: none; text-transform: uppercase;}
-body {background-image: url('https://postimg.cc/VJMZzgHQ'); 
+body {
+background-image: bg.png; 
      }
 h2#game-message
 {
