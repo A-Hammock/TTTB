@@ -1,5 +1,7 @@
-const PLAYER_X_CLASS = document.getElementById[tk.png](https://postimg.cc/QKTnvYwR);
-const PLAYER_O_CLASS = document.getElementById[cb.png](https://postimg.cc/JtDgyt0P);
+<script>
+function imgPick() {
+const PLAYER_X_CLASS = "img src= https://postimg.cc/QKTnvYwR";
+const PLAYER_O_CLASS = "img src= https://postimg.cc/JtDgyt0P";
 const WINNING_COMBINATIONS = [
 	[0, 1, 2],
 	[3, 4, 5],
@@ -82,3 +84,4 @@ function checkWin(currentClass) {
 		})
 	})
 }
+</script>
