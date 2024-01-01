@@ -2,15 +2,20 @@
 <html>
 <head><title>Tic-Tac-Tiger Bro</title>
 <link type="css" rel="stylesheet" href="style.css"/>
-<script src="script.js"></script>		
+<button type="button" onclick= "backgroundimg()">Tiga Tiga Broy ya'll</button>
+<script src="script.js">
+function backgroundimg() {
+	document.body.style.backgroundImage = "url('https://i.postimg.cc/RZpkQb7F/bg.png')";
+}	
+</script>		
 </style>
 </head><img src= "https://i.postimg.cc/0NwHxdHy/image-header.png">
 	<body onload = "startGame();">
 		<h2 id="game-message"> </h2>
 		<div id="game-board">
 		</div>
-		<div  id="restartButton" >
-		<img src="https://i.postimg.cc/jjcQtfZJ/button.png" id="button" onclick="restartGame();">
+		<div  id="startButton" >
+		<img src="https://i.postimg.cc/jjcQtfZJ/button.png" id="button" onclick="startGame();">
 		</div>
 </body>
 </html>
