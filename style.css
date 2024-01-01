@@ -1,8 +1,10 @@
 * {margin: 0; padding: 0; user-select: none; text-transform: uppercase;}
-body {background-image: url('https://i.postimg.cc/RZpkQb7F/bg.png'); }
+body {
+background-image: url('https://i.postimg.cc/RZpkQb7F/bg.png'); 
+}
 h2#game-message
 {
-	font-size: 60px; 
+	font-size: 30px; 
 	font-family: Tahoma;
 	margin-bottom: 15px;
 	text-align: center;
@@ -42,7 +44,7 @@ div[id^="row-"] div:last-child {border-right: none}
     font-size: 16px;
 	border-width: 5px;
     border-style: solid;
-    border-image: url('../img/borderr.png') 25% round;
+    border-image: url('') 25% round;
 
 }
 #restartButton
