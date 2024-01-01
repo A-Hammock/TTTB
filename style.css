@@ -1,5 +1,6 @@
 {margin: 0; padding: 0; user-select: none; text-transform: uppercase;}
-body {background-image: url('https://postimg.cc/VJMZzgHQ'); }
+body {background-image: url('https://postimg.cc/VJMZzgHQ'); 
+     }
 h2#game-message
 {
 	font-size: 20px; 
@@ -26,7 +27,7 @@ div [id^="row-"] div
 	
 	border-width: 15px;
     border-style: solid;
-    border-image: url('../img/border.jpg') 25% repeat;
+    border-image: url('https://i.postimg.cc/m2c4vfTQ/border.png') 25% repeat;
 }
 div#row-1 div {border-top: none;}
 div#row-3 div {border-bottom: none;}
