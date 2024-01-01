@@ -6,10 +6,8 @@
 	--l: 10px;
 }
 body {
+	background-image: url("https://i.postimg.cc/RZpkQb7F/bg.png");
 	margin: 0;
-body {
-background-image: url("https://i.postimg.cc/RZpkQb7F/bg.png");
-}
 
 .board {
 	width: 100vw;
