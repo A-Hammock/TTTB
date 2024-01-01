@@ -3,7 +3,7 @@ var markers = [
   '<img src= "https://i.postimg.cc/5y7dYZ3N/tk.png">'
 ];
 //var players = [];
-var players = [“Bro Exotic”, “Carolla Baskin Robbins”]; 
+var players = [“Bro”, “Carolla”]; 
 var totals = [];
 var winCodes = 
 	[7,56,73,84,146,273,292,448];
