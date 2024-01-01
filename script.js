@@ -93,5 +93,5 @@ function isWin()
 	
 	return false;
 function backgroundimg () {
-	document.body.style.backgroundImage = "url("https://i.postimg.cc/RZpkQb7F/bg.png)";
+	document.body.style.backgroundImage = "url(https://i.postimg.cc/RZpkQb7F/bg.png)";
 	}
