@@ -5,7 +5,8 @@ var markers = [
 //var players = [];
 var players = [“Bro Exotic”, “Carolla Baskin Robbins”]; 
 var totals = [];
-var winCodes = [7,56,73,84,146,273,292,448];
+var winCodes = 
+	[7,56,73,84,146,273,292,448];
 var whoseTurn = 0;
 var gameOver = false;
 var speed = [2, 2];
