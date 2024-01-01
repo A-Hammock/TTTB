@@ -92,3 +92,6 @@ function isWin()
 	if (totals[0] + totals[1] == 511) {gameOver = true;}
 	
 	return false;
+function backgroundimg () {
+	document.body.style.backgroundImage = "url("https://i.postimg.cc/RZpkQb7F/bg.png)";
+	}
