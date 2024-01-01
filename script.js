@@ -1,6 +1,6 @@
 var markers = [
-  <img src= 'https://i.postimg.cc/5y7dYZ3N/tk.png'>,
-  <img src= 'https://i.postimg.cc/5y7dYZ3N/tk.png'>
+  '<img src= "https://i.postimg.cc/5y7dYZ3N/tk.png">',
+  '<img src= "https://i.postimg.cc/5y7dYZ3N/tk.png">'
 ];
 //var players = [];
 var players = [“Bro Exotic”, “Carolla Baskin Robbins”]; 
