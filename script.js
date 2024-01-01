@@ -1,5 +1,3 @@
-<script>
-function imgPick() {
 const PLAYER_X_CLASS = "tk.png";
 const PLAYER_O_CLASS = "cb.png";
 const WINNING_COMBINATIONS = [
