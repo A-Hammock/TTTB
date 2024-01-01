@@ -7,7 +7,8 @@
 }
 body {
 	margin: 0;
-	background-image: url("https://postimg.cc/ft4MBggS");
+body {
+background-image: url("main/bg.png");
 }
 
 .board {
