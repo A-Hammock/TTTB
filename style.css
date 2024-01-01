@@ -1,5 +1,5 @@
 :root {
-	--cell-size: 100px;
+	--cell-size: 200px;
 
 	--color: #black;
 	--color-set: #0275d8;
@@ -7,12 +7,7 @@
 }
 body {
 	margin: 0;
-}
-.img-container {
-        text-align: center;
-        display: block;
-        width: 100px;
-	height: 100px;
+
 }
 .board {
 	width: 100vw;
@@ -27,7 +22,7 @@ body {
 .cell {
 	width: var(--cell-size);
 	height: var(--cell-size);
-	border: 2px solid purple;
+	border: 2px solid black;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -52,29 +47,6 @@ body {
 }
 .cell.x, .cell.circle {
 	cursor: not-allowed;
-}
-/* for cross */
-.board.x .cell:not(.circle):not(.x):hover {
-	background-image: url('tk.png');
-	background-size: 80% 80%;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-/* for cross (set) */
-.cell:not(.circle).x {
-	background-image: url('cb.png');
-	background-size: 80% 80%;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-/* for circle */
-.board.circle .cell:not(.circle):not(.x):hover {	
-	background-image: url('cb.png');
-}
-
-/* for circle (set) */
-.cell:not(.x).circle {
-	background-image: url('cb.png');
 }
 .winning-message {
 	display: none;
