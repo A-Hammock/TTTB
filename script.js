@@ -38,8 +38,8 @@ const enableButtons = () => {
 //This function is executed when a player wins
 const winFunction = (letter) => {
   disableButtons();
-  if (letter == "X") {
-    msgRef.innerHTML = "&#x1F389; <br> 'X' Wins";
+  if (letter == "<img src= https://i.postimg.cc/NM7YDW9F/Untitled-design-3.png height=170 width=175 id=button-options/>") {
+    msgRef.innerHTML = "&#x1F389; <img src= https://i.postimg.cc/NM7YDW9F/Untitled-design-3.png height=170 width=175 id=button-options/>"' Wins";
   } else {
     msgRef.innerHTML = "&#x1F389; <br> 'O' Wins";
   }
@@ -87,12 +87,12 @@ btnRef.forEach((element) => {
     if (xTurn) {
       xTurn = false;
       //Display X
-      element.innerHTML = "<img src= https://i.postimg.cc/NM7YDW9F/Untitled-design-3.png height=170 width=175 id=button-options/>";
+      element.innerHTML = "<img src= https://i.postimg.cc/NM7YDW9F/Untitled-design-3.png height=175 width=175 id=button-options/>";
       element.disabled = true;
     } else {
       xTurn = true;
       //Display Y
-      element.innerHTML = "<img src= https://i.postimg.cc/0QqKb11y/CB-1.png height=170 width=175 id=button-options/>";
+      element.innerHTML = "<img src= https://i.postimg.cc/0QqKb11y/CB-1.png height=175 width=175 id=button-options/>";
       element.disabled = true;
     }
     //Increment count on each click
