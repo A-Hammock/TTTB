@@ -82,13 +82,13 @@ const winChecker = () => {
 };
 
 //Display X/O on click
-btnRef.forEach((element) => {
-  element.addEventListener("click", () => {
+btnRef.forEach((document) => {
+  document.addEventListener("click", () => {
     if (xTurn) {
       xTurn = false;
       //Display X
-      element.innerText = "x";
-      element.disabled = true;
+      document.getElementById("result").innerHTML = "<img src='https://i.postimg.cc/5y7dYZ3N/tk.png' alt='X'/>";
+      document.disabled = true;
     } else {
       xTurn = true;
       //Display Y
