@@ -87,12 +87,12 @@ btnRef.forEach((element) => {
     if (xTurn) {
       xTurn = false;
       //Display X
-      element.innerHTML = "<img src= https://i.postimg.cc/NM7YDW9F/Untitled-design-3.png height=125 width=125 id=button-options/>";
+      element.innerHTML = "<img src= https://i.postimg.cc/NM7YDW9F/Untitled-design-3.png height=130 width=175 id=button-options/>";
       element.disabled = true;
     } else {
       xTurn = true;
       //Display Y
-      element.innerHTML = "<img src= https://i.postimg.cc/0QqKb11y/CB-1.png height=125 width=125 id=button-options/>";
+      element.innerHTML = "<img src= https://i.postimg.cc/0QqKb11y/CB-1.png height=130 width=175 id=button-options/>";
       element.disabled = true;
     }
     //Increment count on each click
