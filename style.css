@@ -5,8 +5,9 @@
   font-family: Times New Roman;
 }
 body {
-  height: naturalHeight;
-  width: naturalWidth; 
+  background-size: 150px;
+  height: 300px;
+  width: 300px; 
   background-image: url(https://i.postimg.cc/WbdFPKRk/Untitled-design.png)
 }
 html {
@@ -24,6 +25,10 @@ html {
   display: flex;
   flex-wrap: wrap;
   gap: 2vmin;
+}
+.img {
+  height: 100px;
+  width: 50px;
 }
 .button-option {
   background: #ffffff;
