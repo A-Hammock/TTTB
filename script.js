@@ -1,7 +1,4 @@
-var markers = [
-  '<img src= "https://i.postimg.cc/5y7dYZ3N/tk.png">',
-  '<img src= "https://i.postimg.cc/5y7dYZ3N/tk.png">'
-];
+
 /let btnRef = document.querySelectorAll(".button-option");
 let popupRef = document.querySelector(".popup");
 let newgameBtn = document.getElementById("new-game");
@@ -42,10 +39,11 @@ const enableButtons = () => {
 //This function is executed when a player wins
 const winFunction = (letter) => {
   disableButtons();
-  if (letter == "X") {
-    msgRef.innerHTML = "&#x1F389; <br> 'X' Wins";
-  } else {
-    msgRef.innerHTML = "&#x1F389; <br> 'O' Wins";
+  if (letter ==  '<img src= "https://i.postimg.cc/5y7dYZ3N/tk.png">' {
+     msgRef.innerHTML = "&#x1F389; <br>  '<img src= "https://i.postimg.cc/5y7dYZ3N/tk.png">'  Wins";
+  }
+ else {
+    msgRef.innerHTML = "&#x1F389; <br>  Wins";
   }
 };
 
