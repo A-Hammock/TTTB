@@ -9,7 +9,7 @@ body {
   background-image: url("https://i.postimg.cc/C1GcLrNp/Untitled-design-2.png");
 }
 html {
-  font-size: 16px;
+  font-size: 12px;
 }
 .wrapper {
   position: absolute;
@@ -35,10 +35,10 @@ html {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 #restart {
-  font-size: 1.3em;
+  font-size: 1.1em;
   padding: 1em;
-  border-radius: 8px;
-  background-color: orange;
+  border-radius: 2px;
+  background-color: #fcb045;
   color: #000000;
   border: none;
   position: relative;
@@ -47,8 +47,8 @@ html {
 }
 .popup {
 background: linear-gradient(135deg, #8052ec, #d161ff);
-  height: 50%;
-  width: 50%;
+  height: 100%;
+  width: 100%;
   position: absolute;
   display: flex;
   z-index: 2;
