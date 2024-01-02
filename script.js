@@ -39,7 +39,7 @@ const enableButtons = () => {
 const winFunction = (letter) => {
   disableButtons();
   if (letter == "<img src= https://i.postimg.cc/NM7YDW9F/Untitled-design-3.png height=170 width=175 id=button-options/>") {
-    msgRef.innerHTML = "<img src= https://i.postimg.cc/NM7YDW9F/Untitled-design-3.png height=170 width=175 id=button-options/> Wins";
+    msgRef.innerHTML = " '<img src= https://i.postimg.cc/NM7YDW9F/Untitled-design-3.png height=170 width=175 id=button-options/>' Wins";
   } else {
     msgRef.innerHTML = "&#x1F389; <br> 'O' Wins";
   }
