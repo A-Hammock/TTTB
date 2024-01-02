@@ -87,7 +87,7 @@ btnRef.forEach((element) => {
     if (xTurn) {
       xTurn = false;
       //Display X
-      element.innerHTML = "<img src= https://i.postimg.cc/5y7dYZ3N/tk.png/>";
+      element.innerHTML = "<img src= https://i.postimg.cc/5y7dYZ3N/tk.png height= "50%" width= "50%"/>";
       element.disabled = true;
     } else {
       xTurn = true;
