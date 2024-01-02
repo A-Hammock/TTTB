@@ -39,11 +39,10 @@ const enableButtons = () => {
 //This function is executed when a player wins
 const winFunction = (letter) => {
   disableButtons();
-  if (letter ==  '<img src= "https://i.postimg.cc/5y7dYZ3N/tk.png">' {
-     msgRef.innerHTML = "&#x1F389; <br>  '<img src= "https://i.postimg.cc/5y7dYZ3N/tk.png">'  Wins";
-  }
- else {
-    msgRef.innerHTML = "&#x1F389; <br>  Wins";
+  if (letter == "X") {
+    msgRef.innerHTML = "&#x1F389; <br> 'X' Wins";
+  } else {
+    msgRef.innerHTML = "&#x1F389; <br> 'O' Wins";
   }
 };
 
