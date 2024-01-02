@@ -5,7 +5,7 @@
   font-family: Times New Roman;
 }
 body {
-  height: 100vh;
+  height: naturalHeight;
   width: naturalWidth; 
   background-image: url(https://i.postimg.cc/WbdFPKRk/Untitled-design.png)
 }
