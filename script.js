@@ -46,9 +46,10 @@ const winFunction = (letter) => {
 };
 
 //Function for draw
+const myImg = document.getElementById("myImg");
 const drawFunction = () => {
   disableButtons();
-  msgRef.innerHTML = <img>"https://i.postimg.cc/5y7dYZ3N/tk.png"</img>;
+  myImg.src = "https://i.postimg.cc/5y7dYZ3N/tk.png";
 };
 
 //New Game
