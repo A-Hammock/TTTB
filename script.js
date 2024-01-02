@@ -39,9 +39,9 @@ const enableButtons = () => {
 const winFunction = (letter) => {
   disableButtons();
   if (letter == "<img src= https://i.postimg.cc/NM7YDW9F/Untitled-design-3.png height=170 width=175 id=button-options/>") {
-    msgRef.innerHTML = " '<img src= https://i.postimg.cc/NM7YDW9F/Untitled-design-3.png height=170 width=175 id=button-options/>' Wins";
+    msgRef.innerHTML = " &#x1F389; <br> '<img src= https://i.postimg.cc/NM7YDW9F/Untitled-design-3.png height=170 width=175 id=button-options/>' Wins";
   } else {
-    msgRef.innerHTML = "&#x1F389; <br> 'O' Wins";
+    msgRef.innerHTML = "&#x1F389; <br> '<img src= https://i.postimg.cc/0QqKb11y/CB-1.png height=175 width=175 id=button-options/>' Wins";
   }
 };
 
