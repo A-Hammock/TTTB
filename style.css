@@ -2,10 +2,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
+  font-family: "Time Roman", sans-serif;
 }
 body {
   height: 100vh;
+  width: 100vh;
+  position: absolute;
   background-image: url(https://i.postimg.cc/mkkzByYp/Tic-Tac-Tiger-Bro.png)
 }
 html {
@@ -25,7 +27,7 @@ html {
   gap: 2vmin;
 }
 .button-option {
-  background: black;
+  background: light pink;
   height: 22vmin;
   width: 22vmin;
   border: none;
