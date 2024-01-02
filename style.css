@@ -1,77 +1,76 @@
-{margin: 0; padding: 0; user-select: none; text-transform: uppercase;}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
 body {
-background-image: bg.png; 
-     }
-h2#game-message
-{
-	font-size: 20px; 
-	font-family: Courier;
-	margin-bottom: 15px;
-	text-align: center;
+  height: 100vh;
+  background-image: url(/main/bg.png);
 }
-div#game-board
-{
-	overflow: hidden;
-	margin: 20px auto;
-	width:870px;
+html {
+  font-size: 16px;
 }
-div[id^="row-"] {clear: both;}
-div [id^="row-"] div
-{
-	border: 30px black;
-	height: 270px;
-	width: 270px;
-	float: left;
-	text-align: center;
-	font-family: Tahoma;
-	font-size: 175px;
-	
-	border-width: 15px;
-    border-style: solid;
-    border-image: url('https://i.postimg.cc/m2c4vfTQ/border.png') 25% repeat;
+.wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
-div#row-1 div {border-top: none;}
-div#row-3 div {border-bottom: none;}
-div[id^="row-"] div:first-child {border-left: none}
-div[id^="row-"] div:last-child {border-right: none}
-
-#button
-{
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-	border-width: 5px;
-    border-style: solid;
-    border-image: url('https://i.postimg.cc/jjcQtfZJ/button.png') 25% round;
-
+.container {
+  width: 70vmin;
+  height: 70vmin;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vmin;
 }
-#restartButton
-{
-	position: absolute;
-	left: 880px;
-	top: 1075px;
+.button-option {
+  background: #ffffff;
+  height: 22vmin;
+  width: 22vmin;
+  border: none;
+  border-radius: 8px;
+  font-size: 12vmin;
+  color: #d161ff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
-@keyframes rotation 
-{
-	from {
-			transform: rotate(0deg);
-	}
-	to {
-			transform: rotate(359deg);
-	}
+#restart {
+  font-size: 1.3em;
+  padding: 1em;
+  border-radius: 8px;
+  background-color: #0a0027;
+  color: #ffffff;
+  border: none;
+  position: relative;
+  margin: 1.5em auto 0 auto;
+  display: block;
 }
-@keyframes slide {
-	0% {left: 0;}
-    100% { left: 1500px;}
+.popup {
+  background: linear-gradient(135deg, #8052ec, #d161ff);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 12vmin;
 }
-#game-board
-{
-	position: relative;
+#new-game {
+  font-size: 0.6em;
+  padding: 0.5em 1em;
+  background-color: #0a0027;
+  color: #ffffff;
+  border-radius: 0.2em;
+  border: none;
 }
-
-#game-board
-{
-	position: relative;
+#message {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1em;
+}
+.popup.hide {
+  display: none;
 }
