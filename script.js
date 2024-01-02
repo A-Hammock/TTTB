@@ -92,7 +92,7 @@ btnRef.forEach((element) => {
     } else {
       xTurn = true;
       //Display Y
-      element.innerText = "O";
+      element.innerText = "<img src= https://i.postimg.cc/MHs5BHSd/Untitled-design.jpg id=button-options/>";
       element.disabled = true;
     }
     //Increment count on each click
