@@ -26,7 +26,7 @@ html {
   gap: 2vmin;
 }
 .button-option {
-  background: purple;
+  background: #ffffff;
   height: 22vmin;
   width: 22vmin;
   border: none;
@@ -40,7 +40,7 @@ html {
   padding: 1em;
   border-radius: 8px;
   background-color: none;
-  color: #ffffff;
+  color: #000000;
   border: none;
   position: relative;
   margin: 1.5em auto 0 auto;
