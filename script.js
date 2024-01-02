@@ -39,7 +39,7 @@ const enableButtons = () => {
 const winFunction = (letter) => {
   disableButtons();
   if (letter == "<img src= https://i.postimg.cc/NM7YDW9F/Untitled-design-3.png height=170 width=175 id=button-options/>") {
-    msgRef.innerHTML = "&#x1F389; <img src= https://i.postimg.cc/NM7YDW9F/Untitled-design-3.png height=170 width=175 id=button-options/>"' Wins";
+    msgRef.innerHTML = "<img src= https://i.postimg.cc/NM7YDW9F/Untitled-design-3.png height=170 width=175 id=button-options/> Wins";
   } else {
     msgRef.innerHTML = "&#x1F389; <br> 'O' Wins";
   }
@@ -66,9 +66,9 @@ const winChecker = () => {
   //Loop through all win patterns
   for (let i of winningPattern) {
     let [element1, element2, element3] = [
-      btnRef[i[0]].innerText,
-      btnRef[i[1]].innerText,
-      btnRef[i[2]].innerText,
+      btnRef[i[0]].innerHTML,
+      btnRef[i[1]].innerHTML,
+      btnRef[i[2]].innerHTML,
     ];
     //Check if elements are filled
     //If 3 empty elements are same and would give win as would
