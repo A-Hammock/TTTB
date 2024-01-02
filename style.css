@@ -6,7 +6,7 @@
 }
 body {
   height: 100vh;
-  background-image: url(https://www.canva.com/design/DAF4mju59E8)
+  background-image: url(https://i.postimg.cc/mkkzByYp/Tic-Tac-Tiger-Bro.png)
 }
 html {
   font-size: 16px;
@@ -25,7 +25,7 @@ html {
   gap: 2vmin;
 }
 .button-option {
-  background: #ffffff;
+  background: black;
   height: 22vmin;
   width: 22vmin;
   border: none;
