@@ -26,10 +26,6 @@ html {
   flex-wrap: wrap;
   gap: 2vmin;
 }
-.img {
-  height: 100px;
-  width: 50px;
-}
 .button-option {
   background: #ffffff;
   height: 22vmin;
