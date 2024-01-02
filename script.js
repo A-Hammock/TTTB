@@ -2,97 +2,111 @@ var markers = [
   '<img src= "https://i.postimg.cc/5y7dYZ3N/tk.png">',
   '<img src= "https://i.postimg.cc/5y7dYZ3N/tk.png">'
 ];
-//var players = [];
-var players = [“Bro”, “Carolla”]; 
-var totals = [];
-var winCodes = 
-	[7,56,73,84,146,273,292,448];
-var whoseTurn = 0;
-var gameOver = false;
-var speed = [2, 2];
+/let btnRef = document.querySelectorAll(".button-option");
+let popupRef = document.querySelector(".popup");
+let newgameBtn = document.getElementById("new-game");
+let restartBtn = document.getElementById("restart");
+let msgRef = document.getElementById("message");
+//Winning Pattern Array
+let winningPattern = [
+  [0, 1, 2],
+  [0, 3, 6],
+  [2, 5, 8],
+  [6, 7, 8],
+  [3, 4, 5],
+  [1, 4, 7],
+  [0, 4, 8],
+  [2, 4, 6],
+];
+//Player 'X' plays first
+let xTurn = true;
+let count = 0;
 
+//Disable All Buttons
+const disableButtons = () => {
+  btnRef.forEach((element) => (element.disabled = true));
+  //enable popup
+  popupRef.classList.remove("hide");
+};
 
-// Play again button
-function restartGame()
-{
-	
-	startGame();
-}
-function startGame() // Choose your names, and display them in the header message.
-{
-	// makes board spin initially
-	document.getElementById("game-board").style.animation = "rotation 4s infinite linear";
-	//players[0] = prompt("Player 1 NAME:");
-	//players[1] = prompt("Player 2 NAME:");
-	var counter = 1;
-	var innerDivs = "";
-	for (i = 1; i <=3; i++)
-	{
-		innerDivs += '<div id="row-' + i + '">';
-		
-		for (j = 1; j <= 3; j++)
-		{
-			innerDivs += '<div onclick="playGame(this,' + counter + ');"></div>';
-			counter *= 2;
-		}
-		innerDivs += '</div>';
-	}
-	
-	document.getElementById("game-board").innerHTML = innerDivs;
-	totals = [0, 0];
-	gameOver = false;
-	document.getElementById("game-message").innerText = "IT'S YOUR TURN " + players[whoseTurn];
-}
+//Enable all buttons (For New Game and Restart)
+const enableButtons = () => {
+  btnRef.forEach((element) => {
+    element.innerText = "";
+    element.disabled = false;
+  });
+  //disable popup
+  popupRef.classList.add("hide");
+};
 
-function playGame(clickedDiv, divValue)
-{
-	if (!gameOver)
-	{	
-	// changes speed depending on how many turns each player has done
-	speed[whoseTurn]++;
-	document.getElementById("game-board").style.animation = "rotation "+  8 / speed[whoseTurn] + "s infinite linear";
-	
-		// Adds X or O depending on whoseTurn
-		clickedDiv.innerHTML = markers[whoseTurn]; 
-		
-		// adds up total each time a player "moves" to track a win condition
-		totals[whoseTurn] += divValue;
-		
-		// calls isWin() function to see if someone won
-		if (isWin())
-		{
-			document.getElementById("game-message").innerText = "WOW VERY COOL " + players[whoseTurn] + " YOU WON";
-			document.getElementById("game-board").style.animation = "slide 2s forwards, rotation "+  8 / speed[whoseTurn] + "s infinite linear";
-		}
-		else if (gameOver)
-		{
-			document.getElementById("game-message").innerText = "YOU BOTH FAILED";
-		}
-		else
-		{
-		// Switches turn each click
-		if (whoseTurn) whoseTurn = 0; else whoseTurn = 1; 
-		
-		// disables onclick tag after clicked so it cannot be used >1 times.
-		clickedDiv.attributes["0"].nodeValue = ""; 
-		
-		// Displays text for which turn it is
-		document.getElementById("game-message").innerText = "IT'S YOUR TURN " + players[whoseTurn];
-		}
-	}
-}
+//This function is executed when a player wins
+const winFunction = (letter) => {
+  disableButtons();
+  if (letter == "X") {
+    msgRef.innerHTML = "&#x1F389; <br> 'X' Wins";
+  } else {
+    msgRef.innerHTML = "&#x1F389; <br> 'O' Wins";
+  }
+};
 
-// win code logic
-function isWin()
-{
-	for (i = 0; i < winCodes.length; i++)
-	{
-		if ((totals[whoseTurn] & winCodes[i]) == winCodes[i]) {gameOver = true;  return true;}
-	}
-	if (totals[0] + totals[1] == 511) {gameOver = true;}
-	
-	return false;
+//Function for draw
+const drawFunction = () => {
+  disableButtons();
+  msgRef.innerHTML = "&#x1F60E; <br> It's a Draw";
+};
 
-function backgroundimg() {
-	document.body.style.backgroundImage = "url('https://i.postimg.cc/RZpkQb7F/bg.png')";
-}	
+//New Game
+newgameBtn.addEventListener("click", () => {
+  count = 0;
+  enableButtons();
+});
+restartBtn.addEventListener("click", () => {
+  count = 0;
+  enableButtons();
+});
+
+//Win Logic
+const winChecker = () => {
+  //Loop through all win patterns
+  for (let i of winningPattern) {
+    let [element1, element2, element3] = [
+      btnRef[i[0]].innerText,
+      btnRef[i[1]].innerText,
+      btnRef[i[2]].innerText,
+    ];
+    //Check if elements are filled
+    //If 3 empty elements are same and would give win as would
+    if (element1 != "" && (element2 != "") & (element3 != "")) {
+      if (element1 == element2 && element2 == element3) {
+        //If all 3 buttons have same values then pass the value to winFunction
+        winFunction(element1);
+      }
+    }
+  }
+};
+
+//Display X/O on click
+btnRef.forEach((element) => {
+  element.addEventListener("click", () => {
+    if (xTurn) {
+      xTurn = false;
+      //Display X
+      element.innerText = "X";
+      element.disabled = true;
+    } else {
+      xTurn = true;
+      //Display Y
+      element.innerText = "O";
+      element.disabled = true;
+    }
+    //Increment count on each click
+    count += 1;
+    if (count == 9) {
+      drawFunction();
+    }
+    //Check for win on every click
+    winChecker();
+  });
+});
+//Enable Buttons and disable popup on page load
+window.onload = enableButtons;
