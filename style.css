@@ -6,7 +6,8 @@
 }
 body {
   height: 100vh;
-  background-image: url(https://i.postimg.cc/mkkzByYp/Tic-Tac-Tiger-Bro.png)
+  width: naturalWidth; 
+  background-image: url(https://i.postimg.cc/WbdFPKRk/Untitled-design.png)
 }
 html {
   font-size: 16px;
