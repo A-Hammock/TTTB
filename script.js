@@ -46,10 +46,9 @@ const winFunction = (letter) => {
 };
 
 //Function for draw
-const myImg = document.getElementById("myImg");
 const drawFunction = () => {
   disableButtons();
-  myImg.src = "https://i.postimg.cc/5y7dYZ3N/tk.png";
+  msgRef.innerHTML = "&#x1F60E; <br> It's a Draw";
 };
 
 //New Game
@@ -83,13 +82,13 @@ const winChecker = () => {
 };
 
 //Display X/O on click
-btnRef.forEach((document) => {
+btnRef.forEach((element) => {
   element.addEventListener("click", () => {
     if (xTurn) {
       xTurn = false;
       //Display X
-      document.getElementById("tk").src="https://i.postimg.cc/5y7dYZ3N/tk.png";
-      document.disabled = true;
+      element.img.src = "https://i.postimg.cc/5y7dYZ3N/tk.png";
+      element.disabled = true;
     } else {
       xTurn = true;
       //Display Y
