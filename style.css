@@ -26,7 +26,7 @@ html {
 }
 .button-option {
   background-image: url("https://i.postimg.cc/C1GcLrNp/Untitled-design-2.png");
-  height: 18vmin;
+  height: 22vmin;
   width: 22vmin;
   border: none;
   border-radius: 8px;
@@ -56,7 +56,7 @@ background: linear-gradient(135deg, #8052ec, #d161ff);
   justify-content: center;
   flex-direction: column;
   gap: 1em;
-  font-size: 12vmin;
+  font-size: 8vmin;
 }
 #new-game {
   font-size: 0.6em;
