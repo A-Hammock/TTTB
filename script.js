@@ -38,10 +38,10 @@ const enableButtons = () => {
 //This function is executed when a player wins
 const winFunction = (letter) => {
   disableButtons();
-  if (letter == "img src= https://i.postimg.cc/NM7YDW9F/Untitled-design-3.png height=105 width=105") {
+  if (letter == "src= https://i.postimg.cc/5y7dYZ3N/tk.png height=125 width=125") {
     msgRef.innerHTML = "&#x1F389; <br>Corola Baskets Wins!";
   } else {
-    msgRef.innerHTML = "&#x1F389; <br>Bro Exotic Wins";
+    msgRef.innerHTML = "&#x1F389; <br> Corolla Baskets Wins";
   }
 };
 
@@ -87,12 +87,12 @@ btnRef.forEach((element) => {
     if (xTurn) {
       xTurn = false;
       //Display X
-      element.innerHTML = "<img src= https://i.postimg.cc/NM7YDW9F/Untitled-design-3.png height=105 width=105 id=button-options/>";
+      element.innerHTML = "src= https://i.postimg.cc/5y7dYZ3N/tk.png height=105 width=105";
       element.disabled = true;
     } else {
       xTurn = true;
       //Display Y
-      element.innerHTML = "<img src= https://i.postimg.cc/0QqKb11y/CB-1.png height=105 width=105 id=button-options/>";
+      element.innerHTML = "img src= https://i.postimg.cc/1RJZjqQh/cb.png height=105 width=105";
       element.disabled = true;
     }
     //Increment count on each click
