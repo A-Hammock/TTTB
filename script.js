@@ -40,16 +40,16 @@ const winFunction = (letter) => {
   disableButtons();
   if (letter == "<img src= https://i.postimg.cc/5y7dYZ3N/tk.png height=125 width=125/>") 
   {
-    msgRef.innerHTML = "&#x1F389; <br>Corola Baskets Wins!";
+    msgRef.innerHTML = "&#x1F389; <br>Corolla Baskets Wins!";
   } else {
-    msgRef.innerHTML = "&#x1F389; <br> Corolla Baskets Wins";
+    msgRef.innerHTML = "&#x1F389; <br>Tiger-Bro Wins";
   }
 };
 
 //Function for draw
 const drawFunction = () => {
   disableButtons();
-  msgRef.innerHTML = "&#x1F60E; <br> T-T-Tie Baby!";
+  msgRef.innerHTML = "T-T-Tie Baby!";
 };
 
 //New Game
@@ -88,12 +88,12 @@ btnRef.forEach((element) => {
     if (xTurn) {
       xTurn = false;
       //Display X
-      element.innerHTML = "<img src= https://i.postimg.cc/5y7dYZ3N/tk.png height=105 width=105/>";
+      element.innerHTML = "<img src= https://i.postimg.cc/5y7dYZ3N/tk.png height=120 width=120/>";
       element.disabled = true;
     } else {
       xTurn = true;
       //Display Y
-      element.innerHTML = "<img src= https://i.postimg.cc/1RJZjqQh/cb.png height=105 width=105/>";
+      element.innerHTML = "<img src= https://i.postimg.cc/1RJZjqQh/cb.png height=120 width=120/>";
       element.disabled = true;
     }
     //Increment count on each click
