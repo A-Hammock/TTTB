@@ -49,7 +49,7 @@ html {
 background: url'(https://i.postimg.cc/7PQmKDmF/Tic-Tac-Tiger-Bro.png');
   height: 75%;
   width: 75%;
-  position: relative;
+  position: absolute;
   display: flex;
   z-index: 2;
   align-items: center;
@@ -59,9 +59,9 @@ background: url'(https://i.postimg.cc/7PQmKDmF/Tic-Tac-Tiger-Bro.png');
   font-size: 8vmin;
 }
 #new-game {
-  font-size: 0.2em;
+  font-size: 0.4em;
   padding: 0.5em 1em;
-  background-color: #000000;
+  background-color:;
   color: #ffffff;
   border-radius: 0.2em;
   border: none;
