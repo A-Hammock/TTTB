@@ -47,8 +47,8 @@ html {
 }
 .popup {
 background: linear-gradient(135deg, #8052ec, #d161ff);
-  height: 100%;
-  width: 100%;
+  height: 50%;
+  width: 50%;
   position: absolute;
   display: flex;
   z-index: 2;
