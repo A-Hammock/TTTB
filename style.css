@@ -49,7 +49,7 @@ html {
 background: linear-gradient(135deg, #8052ec, #d161ff);
   height: 50%;
   width: 50%;
-  position: absolute;
+  position: relative;
   display: flex;
   z-index: 2;
   align-items: center;
