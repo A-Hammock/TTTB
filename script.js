@@ -42,7 +42,7 @@ const winFunction = (letter) => {
   {
     msgRef.innerHTML = "&#x1F389; <br>TigerBro Wins!";
   } else {
-    msgRef.innerHTML = "&#x1F389; <br>CB Wins";
+    msgRef.innerHTML = "Winner Winner &#127831; <br> Dinner!";
   }
 };
 
