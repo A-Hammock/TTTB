@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Times, serif;
+  font-family: Times;
 }
 body {
   background-size: cover;
@@ -38,17 +38,17 @@ html {
   font-size: 1.1em;
   padding: 1em;
   border-radius: 3px;
-  background-color: #fcb045;
-  color: #000000;
-  border: solid;
+  background-color: transparent;
+  color: transparent;
+  border: none;
   position: relative;
   margin: 1.5em auto 0 auto;
   display: block; 
 }
 .popup {
 background: url'(https://i.postimg.cc/7PQmKDmF/Tic-Tac-Tiger-Bro.png');
-  height: 70%;
-  width: 50%;
+  height: 75%;
+  width: 75%;
   position: relative;
   display: flex;
   z-index: 2;
@@ -59,9 +59,9 @@ background: url'(https://i.postimg.cc/7PQmKDmF/Tic-Tac-Tiger-Bro.png');
   font-size: 8vmin;
 }
 #new-game {
-  font-size: 0.6em;
+  font-size: 0.2em;
   padding: 0.5em 1em;
-  background-color: #0a0027;
+  background-color: #000000;
   color: #ffffff;
   border-radius: 0.2em;
   border: none;
