@@ -38,7 +38,7 @@ const enableButtons = () => {
 //This function is executed when a player wins
 const winFunction = (letter) => {
   disableButtons();
-  if (letter == "<img src= https://i.postimg.cc/zGMRm5x4/Untitled-design-2.png>") 
+  if (letter == "<img src= https://i.postimg.cc/zGMRm5x4/Untitled-design-2.png/>") 
   {
     msgRef.innerHTML = "&#x1F389; <br>TigerBro Wins!";
   } else {
