@@ -34,20 +34,20 @@ html {
   color: #d161ff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
-#restart {
+ #restart {
   font-size: 1.1em;
   padding: 1em;
-  border-radius: 2px;
+  border-radius: 3px;
   background-color: #fcb045;
   color: #000000;
-  border: none;
+  border: solid;
   position: relative;
   margin: 1.5em auto 0 auto;
-  display: block;
+  display: block; 
 }
 .popup {
-background: url(https://i.postimg.cc/7PQmKDmF/Tic-Tac-Tiger-Bro.png);
-  height: 50%;
+background: url'(https://i.postimg.cc/7PQmKDmF/Tic-Tac-Tiger-Bro.png');
+  height: 70%;
   width: 50%;
   position: relative;
   display: flex;
@@ -67,7 +67,7 @@ background: url(https://i.postimg.cc/7PQmKDmF/Tic-Tac-Tiger-Bro.png);
   border: none;
 }
 #message {
-  color: linear-gradient(135deg, #8052ec, #d161ff);
+  color: #000000;
   text-align: center;
   font-size: 1em;
 }
