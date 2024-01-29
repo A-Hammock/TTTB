@@ -38,7 +38,7 @@ const enableButtons = () => {
 //This function is executed when a player wins
 const winFunction = (letter) => {
   disableButtons();
-  if (letter == "<img src= https://i.postimg.cc/zGMRm5x4/Untitled-design-2.png/>".) 
+  if (img == "<img src= https://i.postimg.cc/zGMRm5x4/Untitled-design-2.png/>") 
   {
     msgRef.innerHTML = "&#x1F389; <br>TigerBro Wins!";
   } else {
@@ -88,7 +88,7 @@ btnRef.forEach((element) => {
     if (xTurn) {
       xTurn = false;
       //Display X
-      element.innerHTML = "<img src= https://i.postimg.cc/zGMRm5x4/Untitled-design-2.png height=135 width=135/>".;
+      element.innerHTML = "<img src= https://i.postimg.cc/zGMRm5x4/Untitled-design-2.png height=135 width=135/>";
       element.disabled = true;
     } else {
       xTurn = true;
