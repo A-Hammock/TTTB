@@ -5,7 +5,7 @@
   font-family: Times;
 }
 body {
-  background-image: url("https://i.postimg.cc/XJH9L58P/That-B-Corola-Baskets.png");
+  background-image: url('https://i.postimg.cc/XJH9L58P/That-B-Corola-Baskets.png');
   background-size: auto;
   background-repeat: no-repeat;
 }
@@ -48,9 +48,9 @@ html {
 }
 .popup {
 background: url('https://i.postimg.cc/7PQmKDmF/Tic-Tac-Tiger-Bro.png');
-  height: 75%;
-  width: 75%;
-  position: absolute;
+  height: 125%;
+  width: 125%;
+  position: relative;
   display: flex;
   z-index: 2;
   align-items: center;
@@ -68,9 +68,9 @@ background: url('https://i.postimg.cc/7PQmKDmF/Tic-Tac-Tiger-Bro.png');
   border: none;
 }
 #message {
-  color: #000000;
+  color: purple;
   text-align: center;
-  font-size: 1em;
+  font-size: 2em;
 }
 .popup.hide {
   display: none;
