@@ -46,7 +46,7 @@ html {
   display: block; 
 }
 .popup {
-background: url'(https://i.postimg.cc/7PQmKDmF/Tic-Tac-Tiger-Bro.png');
+background: url('https://i.postimg.cc/7PQmKDmF/Tic-Tac-Tiger-Bro.png');
   height: 75%;
   width: 75%;
   position: absolute;
