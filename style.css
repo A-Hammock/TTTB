@@ -48,8 +48,8 @@ html {
 }
 .popup {
 background: url('https://i.postimg.cc/7PQmKDmF/Tic-Tac-Tiger-Bro.png');
-  height: 125%;
-  width: 125%;
+  height: 75%;
+  width: 75%;
   position: relative;
   display: flex;
   z-index: 2;
