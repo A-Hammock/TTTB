@@ -50,7 +50,7 @@ html {
 background: url('https://i.postimg.cc/7PQmKDmF/Tic-Tac-Tiger-Bro.png');
   height: 75%;
   width: 75%;
-  position: relative;
+  position: absolute;
   display: flex;
   z-index: 2;
   align-items: center;
