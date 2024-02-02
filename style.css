@@ -21,7 +21,7 @@ html {
 .container {
   width: 65vmin;
   height: 65vmin;
-  display: flex;
+  display: absolute;
   flex-wrap: wrap;
   gap: 2vmin;
 }
