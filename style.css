@@ -48,8 +48,8 @@ html {
 }
 .popup {
 background-color: #transparent;
-  height: 55%;
-  width: 55%;
+  height: 75%;
+  width: 75%;
   position: absolute;
   display: flex;
   z-index: 2;
