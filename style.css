@@ -19,8 +19,8 @@ html {
   left: 50%;
 }
 .container {
-  width: 70vmin;
-  height: 70vmin;
+  width: 65vmin;
+  height: 65vmin;
   display: flex;
   flex-wrap: wrap;
   gap: 2vmin;
